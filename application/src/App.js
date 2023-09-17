@@ -1,12 +1,11 @@
 // import { ReactComponent as Logo } from './mythiclibrary.svg';
 import React from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Homescreen from './website/Homescreen/Homescreen.jsx';
 import Header from './website/Header/Header';
