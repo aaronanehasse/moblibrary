@@ -8,7 +8,7 @@
     "client": "npm --prefix application/. run start",
     "server": "node index.js",
     "install:client": "cd application && npm install",
-    "install:all": "npm install:client && npm install",
+    "install:all": "npm run install:client && npm install",
     "build": "npm --prefix application/. run build && npm run production",
     "production": "npm run server",
     "start": "concurrently \"npm run server\" \"npm run client\""
