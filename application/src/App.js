@@ -14,13 +14,11 @@ import Signup from './website/sign/Signup';
 function App() {
   return (
   <BrowserRouter>
-  <html>
   <Header />
       <Routes >
           <Route path='/' element={<Homescreen />} />
           <Route path='/signup' element={<Signup />} />
       </Routes>
-  </html>
   </BrowserRouter>);
 }
 
