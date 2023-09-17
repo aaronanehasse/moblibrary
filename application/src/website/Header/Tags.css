@@ -1,0 +1,27 @@
+.tags-header-container {
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+}
+.tag {
+    background-color: #dedede10;
+    color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 3px 7px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.tag-selected {
+    background: linear-gradient(305deg, #bc6ac2, #6473cc);
+    background-size: 400% 400%;
+    font-weight: 400;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}

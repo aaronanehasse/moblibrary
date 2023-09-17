@@ -1,0 +1,360 @@
+:root {
+  --background-default: #17171f;
+  --background-lightvariant: #1c1c24;
+  --background-secondary: #1c1c24;
+  --background-secondary-opacityredux: #251f3646;
+  --default-gradient: linear-gradient(330deg, rgba(188,106,194,1) 0%, rgba(100,115,204,1) 100%)
+}
+.App {
+  text-align: center;
+}
+html {
+  background-color: var(--background-default);
+  font-family: 'Roboto', sans-serif;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.input-level2 {
+  background-color: var(--background-secondary);
+  border: 1px solid rgb(90, 90, 90);
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 45px);
+  color: white;
+  border-radius: 5px;
+}
+.signup-title{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+.signup-subtitle {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+}
+.sign-logo {
+  fill: #ddddff;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+}
+.createbutton {
+  width: 87px;
+}
+
+.sign-banner {
+  width: 90px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 130%;
+  background: linear-gradient(305deg, #bc6ac2, #6473cc);
+  background-size: 400% 400%;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: mask 5s infinite linear;
+  /* animation: AnimationName 30s ease infinite; */
+}
+.sign-banner-title {
+  width: 150%;
+  color: white;
+  user-select: none;
+  background: linear-gradient(
+    to right,
+    #c4a8ff 20%,
+    #b670e2 30%,
+    #8557db 70%,
+    #d5c4fd 80%
+);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+  position: absolute;
+  top: -30px;
+  font-weight: 800;
+  font-size: 70px;
+  z-index: 10;
+}
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+.input-level2:active {
+  background-color: var(--background-secondary);
+  border: 1px solid rgb(191, 41, 41);
+}
+.signpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  height: 60vh;
+  padding: 70px;
+}
+.signcard {
+  overflow: hidden;
+  width: 80%;
+  max-width: 720px;
+  height: 520px;
+  max-height: 820px;
+  display: flex;
+  /* border: 1px solid white; */
+  box-shadow: 0px 0px 95px rgba(62, 62, 62, 0.483);
+
+  border-radius: 20px;
+  margin: _40px;
+  overflow: hidden;
+  flex-direction: row;
+}
+.sign-inputs {
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(20, 20, 20, 0.552);
+  z-index: 20;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+}
+.logo-src-text {
+  font-weight: 200;
+  font-size: 20px;
+}
+.header-logo {
+  height: 75px;
+  display: flex;
+  cursor: pointer;
+  /* width: 35px; */
+  /* width: 200px; */
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0px 0px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.logo-src-header {
+  fill: white;
+  height: 45px;
+  width: 45px;
+}
+.sign-in-button * {
+  cursor: pointer !important;
+}
+.sign-in-button-inside:hover {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--background-secondary-opacityredux);
+  /* color: black; */
+}
+.sign-in-button-outside:hover {
+  /* padding: 0px; */
+  transition: padding 0.3s;
+  background: linear-gradient(305deg, #bc6ac2, #6473cc);
+  background-size: 400% 400%;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+.sign-in-button:not(hover), .sign-in-button-inside {
+  transition: background 0.3s;
+  background-color: none;
+}
+.searchicon {
+  fill: rgb(132, 132, 132);
+  height: 20px;
+  width: 20px;
+}
+.profile-header {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+.sign-in-button-inside {
+  padding: 10px 20px;
+  background: var(--background-secondary);
+  color: white;
+  border-style: none;
+  border-radius: 80px;
+  transition: background 0.3s, color 0.3s;
+}
+.sign-in-button-outside {
+  background: var(--default-gradient);
+  border-radius: 75px;
+  overflow: hidden;
+  padding: 1.5px;
+  transition: padding 0.3s;
+}
+
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 79%}
+  50%{background-position:100% 22%}
+  100%{background-position:0% 79%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 79%}
+  50%{background-position:100% 22%}
+  100%{background-position:0% 79%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 79%}
+  50%{background-position:100% 22%}
+  100%{background-position:0% 79%}
+}
+.subheader {
+  width: 100vw;
+  height: 50px;
+}
+.content-type-menu {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.content-type-menu-element {
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(182, 182, 182);
+}
+.content-type-menu-element-selected {
+  font-size: 18px;
+  padding: 10px;
+  transform: translateY(1.5px);
+  cursor: pointer;
+  
+  color: rgb(232, 232, 232);
+  /* border-image: var(--default-gradient); */
+}
+.content-type-menu-element-selectionbar {
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 0px;
+  transform: translateY(5px);
+  border-radius: 100px;
+  width: 80%;
+  background: linear-gradient(305deg, #bc6ac2, #6473cc);
+  background-size: 400% 400%;
+
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+.header-center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+}
+.header-searchbar {
+  border: 1.5px solid rgb(92, 92, 92);
+  border-radius: 30px;
+  padding: 8px;
+  display: flex;
+  max-height: 80px;
+  position: relative;
+  width: 40vw;
+  max-width: 380px;
+}
+.searchbar-input {
+  width: calc(100% - 50px);
+  background-color: transparent !important;
+  border-style: none;
+  color: white;
+  height: 100%;
+}
+.searchbar-input:focus {
+  outline: none;
+}
+.card-social-placeholders {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  justify-content: space-evenly;
+}
+.card-placeholder {
+  color: white;
+  opacity: 50%;
+  display: flex;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.card-placeholder svg {
+  margin: 0px 3px;
+  transform: translate(-3px);
+}
+.loveico {
+  fill: white;
+  height: 26px;
+}
+.product-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.backbutton {
+  opacity: 70%;
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+  height: 14px;
+  aspect-ratio: 1/1;
+  padding: 20px;
+}
+.backbutton:hover {
+  opacity: 100%;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-in;
+  transform: translate(-5px);
+}
