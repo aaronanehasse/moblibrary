@@ -7,7 +7,7 @@
     "test": "test",
     "client": "npm --prefix application/. run start",
     "server": "node index.js",
-    "build": "npm --prefix application/. build && npm start",
+    "build": "npm --prefix application/. run build && npm start",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "kio",
