@@ -7,7 +7,8 @@
     "test": "test",
     "client": "npm --prefix application/. run start",
     "server": "node index.js",
-    "build": "npm --prefix application/. run build && npm start",
+    "build": "npm --prefix application/. run build && npm run production",
+    "production": "npm run server",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "kio",
@@ -18,6 +19,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongodb": "^6.1.0",
-    "mongoose": "^7.5.2"
+    "mongoose": "^7.5.2",
+    "path": "^0.12.7"
   }
 }
