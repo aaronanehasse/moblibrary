@@ -15,7 +15,7 @@ app.use(express.urlencoded({ limit: '100MB', extended: true }))
 app.use('/api/user', userRoutes)
 app.use('/api/product', productRoutes)
 
-const port = 7000
+const port = 8080
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '/application/build')))
