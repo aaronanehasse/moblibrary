@@ -1,0 +1,110 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.square-slider {
+    /* width: 800px; */
+}
+.image-gallery-slide {
+    /* height: 500px;
+    width: 500px; */
+    object-fit: cover;
+}
+.image-gallery-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+}
+.image-gallery-slide .image-gallery-image {
+    object-fit: cover !important;
+}
+.square-slider {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:focus {
+    border: 4px solid #bc6ac2!important;
+}
+.square-slider {
+    max-width: 1055px;
+    margin: 20px;
+    width: 500px;
+    aspect-ratio: 1/1;
+}
+@media screen and (max-width: 1550px) {
+    .square-slider {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .square-slider {
+        width: 300px;
+    }
+    /* .packpage-content {
+        width: 200px !important;
+    } */
+}
+@media screen and (max-width: 680px) {
+    .square-slider {
+        width: 100%;
+    }
+    .packpage-content {
+        width: 100% !important;
+    }
+    .packpage-headersection {
+
+        flex-wrap: wrap;
+        width: 70vw;
+    }
+}
+.packpage-headersection {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    max-width: 2000px;
+    justify-content: center;
+    position: relative !important;
+    /* align-items: center; */
+}
+.packpage-title {
+    position: relative;
+    font-size: 30px;
+    max-width: 400px;
+    width: 100%;
+    color: rgb(163, 163, 163);
+}
+.packpage-content {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    /* margin-right: 200px; */
+    position: relative !important;
+}
+.productpage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.packpage-subtitle {
+    position: absolute;
+    left: 0px;
+    font-size: 19px;
+    bottom: -25px;
+}
+.downloadbutton {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+.image-gallery-content.fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image-gallery-content.fullscreen .image-gallery-slide-wrapper {
+    width: 65%;
+}
+.image-gallery-content {
+    width: 100%;
+}

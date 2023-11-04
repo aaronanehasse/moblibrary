@@ -1,28 +1,140 @@
 .homescreen {
-    padding: 40px;
+    padding: 5px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
 }
 .productcard-model {
-    border: 1px solid #cccccc14;
-    height: 500px;
-    margin: 0px 10px;
+    /* height: 500px; */
+    aspect-ratio: 3/4;
+    margin: 0px 15px;
     width: 340px;
     border-radius: 14px;
-    background-color: var(--background-lightvariant);
+    background: linear-gradient(180deg, #383847 0%, #1A1A23 100%);
     box-shadow: 0px 0px 15px rgba(20, 20, 20, 0.483);
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     transition: transform 0.2s ease-in, border 0.2s ease-in;
-
+    outline: 1px solid rgba(77, 77, 77, 0.38);
+    margin-bottom: 20px;
 }
 .productcard-model:hover {
-    border: 1px solid #cccccc43;
+    outline: 1px solid #DF96F9;
     transform: scale(104%);
     transition: transform 0.2s ease-in, border 0.2s ease-in;
     background-color: var(--background-lightvariant);
     box-shadow: 0px 0px 15px rgba(20, 20, 20, 0.483);
 }
+
+@media screen and (max-width: 1996px) {
+    .productcard-model {
+        width: calc(17.2% + 4px);
+    }
+}
+@media screen and (max-width: 1720px) {
+    .productcard-model {
+        width: calc(22% + 2px);
+    }
+}
+@media screen and (max-width: 1536px) {
+    .productcard-model {
+        width: calc(16% + 10px);
+    }
+    .card-description {
+        display: none;
+    }
+}
+@media screen and (max-width: 1473px) {
+    .productcard-model {
+        width: calc(20% + 1.2%);
+    }
+    .card-description {
+        display: none;
+    }
+}
+@media screen and (max-width: 1178px) {
+    .productcard-model {
+        width: calc(19% + 1.2%);
+    }
+    .productcard-model {
+        background: none;
+        outline: none !important;
+        border-style: none;
+        box-shadow: none;
+    }
+    .productcard-model:hover {
+        transform: scale(100%);
+        border: none;
+        box-shadow: none;
+        background: none;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .productcard-model {
+        width: calc(27% + 13px);
+    }
+
+}
+@media screen and (max-width: 928px) {
+    .productcard-model {
+        width: calc(26% + 15px);
+    }
+
+}
+@media screen and (max-width: 841px) {
+    .productcard-model {
+        width: calc(25% + 20px);
+    }
+
+}
+@media screen and (max-width: 813px) {
+    .productcard-model {
+        width: calc(40% + 23px);
+    }
+
+}
+@media screen and (max-width: 722px) {
+    .productcard-model {
+        width: calc(40% + 13px);
+    }
+
+}
+@media screen and (max-width: 622px) {
+    .productcard-model {
+        width: calc(40% + 6px);
+    }
+
+
+}
+@media screen and (max-width: 609px) {
+    .card-title {
+        font-size: 17px !important;
+    }
+}
+@media screen and (max-width: 575px) {
+    .card-title {
+        font-size: 17px !important;
+    }
+    .homescreen {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width: 486px) {
+    .productcard-model {
+        width: calc(39% + 3px);
+    }
+}
+@media screen and (max-width: 412px) {
+    .productcard-model {
+        width: calc(90% + 3px);
+    }
+}
+
+
 .productcard-model-image {
     width: 100%;
     object-fit: fill;
@@ -45,4 +157,157 @@
 .card-description {
     color: rgb(155, 155, 155);
     padding: 0px 10px;
+    height: 2.5em;
+    overflow: hidden;
+}
+.productsectiontitle {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #FFF;
+    text-align: start;
+    width: 100%;
+    padding: 10px 17px;
+    font-weight: 300;
+    max-width: 1866px;
+}
+.newsbanner {
+    height: 282px;
+    flex-shrink: 0;
+    margin: 20px 0px;
+    margin-bottom: 50px;
+    width: calc(100% - 48px);
+    border-radius: 18px;
+    border: 1px solid var(--Highlight-1, #DF96F9);
+    background: linear-gradient(82deg, #191929 1.95%, #26192B 148.2%);
+    max-width: 1866px;
+    position: relative;
+    display: flex;
+    box-shadow:  20px 20px 34px #121218,
+    -20px -20px 34px #1c1c26;
+    flex-direction: row;
+}
+@media screen and (max-width: 850px) {
+    
+}
+
+.newbannercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.newbannertitle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 512px;
+}
+.newbannertitle-first {
+    position: absolute;
+    color: #D0ABFF;
+    font-family: Roboto;
+    font-size: 128px;
+    font-style: normal;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+.newbannertitle-relase{
+    color: #181821;
+    font-family: Roboto;
+    font-size: 128px;
+    font-style: normal;
+    position: absolute;
+    font-weight: 400;
+    left: 85px;
+    top: 85px;
+    line-height: normal;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #DF96F9;
+}
+.newsbannertext {
+    color: white;
+    font-family: Roboto;
+    z-index: 20;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.discovermorebutton {
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    width: 110px;
+    height: 31px;
+    margin-top: 30px;
+    color: var(--Highlight-1, #DF96F9);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    flex-shrink: 0;
+    border-radius: 18px;
+    border: 1px solid var(--Highlight-1, #DF96F9);
+    background: linear-gradient(82deg, #191929 1.95%, #26192B 148.2%);
+    color: #DF96F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newbannerecho {
+    transform: translate(0px, -18px) scale(160%);
+    width: 307px;
+    /* position: absolute; */
+    right: -20px;
+}
+.newbannerecho div {
+    position: absolute;
+}
+@media screen and (max-width: 1233px) {
+    .newbannertitle {
+        width: 280px;
+    }
+    .newbannertitle-first {
+        font-size: 95px;
+        top: 40px;
+        left: 0px;
+    }
+    .newbannertitle-relase {
+        font-size: 95px;
+        top: 91px;
+        left: 37px;
+    }
+    .newbannerecho {
+        transform: scale(110%);
+        position: absolute;
+        width: 286px;
+        height: 150px;
+        right: -8px;
+        top: -69px;
+    }
+
+}
+@media screen and (max-width: 1019px) {
+    .newbannerecho img {
+        width: 100%;
+    }
+    .newbannerecho {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        right: 127px;
+        top: 78px;
+    }
 }

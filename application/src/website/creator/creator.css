@@ -1,0 +1,640 @@
+.creatorpage {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    /* overflow: hidden; */
+}
+.creatorcard {
+    /* background-color: rgba(255, 0, 0, 0.237); */
+    justify-content: center;
+    /* height: 700px; */
+    width: 100%;
+    display: flex;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+.creatortypeselector {
+    cursor: pointer;
+    color: rgb(182, 182, 182);
+    padding: 10px;
+}
+.creatortypeselector-element {
+    border-radius: 5px;
+    padding: 6px 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.creatorselected {
+    color: white;
+    background: linear-gradient(305deg, #bc6ac2, #6473cc);
+    background-size: 400% 400%;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+.threadcreator {
+    color: white;
+    padding: 20px 45px;
+    /* background-color: rgba(115, 115, 115, 0.105); */
+    border-radius: 0px;
+    border-bottom: 1px solid rgb(164, 164, 164);
+    display: flex;
+    position: relative;
+    max-width: 600px;
+    height: fit-content;
+    flex-direction: column;
+    max-height: 50vh;
+    padding-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+
+.guZdik {
+    transition: border 0.3s, fill 0.3s;
+    border: 3px dashed rgb(95, 95, 95) !important;
+    /* width: calc(100% - 90px); */
+    min-width: 200px !important;
+    width: 587px !important;
+    padding: 33px !important;
+    height: 119px;
+    border-radius: 13px !important;
+    /* transform: scale(123%); */
+} 
+.kFhUBM {
+  font-size: 16px !important;
+}
+.guZdik path {
+    transition:fill 0.1s;
+}
+.guZdik svg{
+  height: 40px !important;
+  width: 40px !important;
+  margin-right: 10px;
+}
+.file-types {
+  font-size: 16px !important;
+}
+
+.guZdik path{
+    fill: rgb(95, 95, 95) !important;
+}
+.guZdik:hover, .guZdik:hover path{
+    fill: rgb(154, 154, 154) !important;
+    border: 3px dashed rgb(154, 154, 154) !important;
+    transition: border 0.1s, fill 0.1s;
+}
+.bpxkGG > span {
+    font-size: 12px;
+    color: rgb(255, 134, 134) !important;
+}
+.kFhUBM {
+    transition: color 0.1s;
+
+}
+.guZdik:hover .kFhUBM {
+    transition: color 0.1s;
+
+    color: rgb(154, 154, 154) !important;
+    
+}
+.threadcreatortitle {
+    background-color: var(--background-color);
+    border-style: none;
+    color: rgb(177, 177, 177);
+    border-radius: 5px;
+    padding: 5px;
+    /* box-shadow:  10px 10px 14px #121218,
+    -10px -10px 14px #1c1c26; */
+    font-weight: 400;
+    border: 1px solid rgb(100, 100, 100);
+    font-size: 19px;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    z-index: 20;
+}
+.threadcreatortitle:focus {
+    outline: none;
+}
+.threadcreatordescription {
+    
+    background-color: var(--background-color);
+    border-style: none;
+    color: rgb(177, 177, 177);
+    border-radius: 5px;
+    z-index: 10;
+    padding: 5px;
+    /* box-shadow:  20px 20px 34px #121218,
+    -10px -10px 14px #1c1c26; */
+    font-weight: 400;
+    border: 1px solid rgb(100, 100, 100);
+    font-size: 14px;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    height:fit-content;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    resize: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    /* min-height: 50px; */
+    overflow-y: scroll;
+    max-height: 650px;
+}
+.threadcreatordescription::-webkit-scrollbar {
+    display: none;
+  }
+.threadcreatordescription:focus {
+    outline: none;
+}
+.creatorcardcontent{
+    width: 90%;
+    /* overflow: hidden; */
+    max-width: 700px;
+    padding-bottom: 10px;
+}
+.theadcreator-addsection {
+    width: calc(100% - 40px);
+    /* background-color: red; */
+    display: flex;
+    min-height: 30px;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.theadcreator-addsection-button {
+    opacity: 80%;
+    padding: 5px;
+    transition: transform 0.12s, opacity 0.2s;
+    cursor: pointer;
+}
+.theadcreator-addsection-button:hover {
+    opacity: 100%;
+    transition: transform 0.12s, opacity 0.2s;
+
+}
+.theadcreator-addsection-button svg {
+    fill: gray;
+    height: 26px;
+    width: 26px;
+}
+.creatorpackpreview {
+    color: white;
+    padding: 20px 45px;
+    background-color: rgba(115, 115, 115, 0.105);
+    border-radius: 11px;
+    border: 1px solid rgb(55, 55, 55);
+    display: flex;
+    position: relative;
+    min-width: 210px;
+    height: fit-content;
+    width: 280px;
+    height: 390px;
+    flex-direction: column;
+    max-height: 50vh;
+    padding-bottom: 40px;
+    padding-bottom: 20px;
+}
+.creatorpack-card {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    flex-direction: column;
+    color: rgb(110, 110, 110);
+    padding: 5px;
+    font-size: 19px;
+    animation: creatorpackcardspawn 0.3s ease-in;
+}
+@keyframes creatorpackcardspawn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+.creatorpack-card-row {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+.creatorpack-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-bottom: 25px;
+}
+.creatorpack-droppack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.creatorpack {
+    position: relative;
+}
+.creatorpac-input-title {
+    padding: 5px;
+    z-index: 30;
+    margin-bottom: 4px;
+    font-size: 32px;
+    color: #4d4d4d;
+}
+.creatorpac-input-container {
+    padding: 5px 15px;
+
+}
+.input-group {
+    position: relative;
+    margin: 15px 0 0 0;
+   }
+   
+   .input-level3 {
+    
+    border: 2px solid rgba(95, 95, 95, 0.20);
+    border-radius: 5px;
+    background: none;
+    padding: 0.8rem;
+    font-size: 13px;
+    width: 100%;
+    max-width: 320px;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   .textarea-level3 {
+    border: 2px solid rgba(95, 95, 95, 0.20);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    padding: 0.8rem;
+    font-size: 13px;
+    width: 100%;
+    max-width: 320px;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    height: 196px;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 650px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+   }
+   /* hide scrollbar for chrome, safari and opera */
+    .textarea-level3::-webkit-scrollbar {
+        display: none;
+    }
+   
+   .user-label {
+    position: absolute;
+    left: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    top: 4px;
+    color: #757575;
+    pointer-events: none;
+    transform: translateY(6px);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1), left 150ms;
+   }
+   .creatorpack-galery-container {
+    border-radius: 9px;
+    border: 2px solid rgba(95, 95, 95, 0.20);
+    width: calc(100% - 20px);
+    /* height: 133px; */
+    margin: 15px 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 190px;
+   }
+   .creatorpack-galery-container::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  
+  }
+  
+  .creatorpack-galery-container::-webkit-scrollbar-thumb {
+    background: #8d83a023; /* Define the color of the thumb */
+    border-radius: 6px; /* Make the thumb round */
+  }
+  
+  .creatorpack-galery-container::-webkit-scrollbar-track {
+    background: #15151bd9; /* Define the color of the track */
+    border-radius: 40px;
+  }
+  
+  /* Define the scrollbar styles for Firefox */
+  .custom-file-input-galery {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: #333 #f1f1f100; /* Define thumb and track colors */
+  }
+  
+  /* Define the scrollbar styles for IE and Edge */
+  .custom-file-input-galery {
+    -ms-overflow-style: none; /* Hide the scrollbar in IE and Edge */
+  }
+  
+   .creatorpack-galery {
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .creatorpack-galery img {
+    height: 120px;
+    width: 120px;
+    
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 3px 8px;
+    border-radius: 6px;
+  }
+  .addimagesquare {
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 3px 8px;
+    background: #16151d;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    line-height: 137px;
+  }
+  .addimagesquare svg{
+    transition: fill 0.3s;
+  }
+  .addimagesquare:hover svg{
+    fill: rgb(158, 158, 158) !important;
+    transition: fill 0.3s;
+  }
+  
+  
+   
+   .input-level3:focus {
+    outline: none;
+    border: 2px solid #bc6ac2;
+    
+   }
+   .textarea-level3:focus {
+    outline: none;
+    border: 2px solid #bc6ac2;
+   }
+   
+
+   .textarea-level3:focus ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: var(--background-default);
+    padding: 0 .2em;
+    left: 8px;
+    color: #bc6ac2;
+    top: 0px;
+   }
+   .input-level3:focus ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: var(--background-default);
+    padding: 0 .2em;
+    left: 8px;
+    color: #bc6ac2;
+    top: 0px;
+   }
+   .inputfilled ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: var(--background-default);
+    padding: 0 .2em;
+    left: 8px;
+    color: #767676;
+   }
+   .thumnailupload .guZdik {
+    max-width: 200px !important;
+    min-width: 200px !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px !important;
+    min-width: 200px !important;
+    height: 200px;
+   }
+   .thumnailupload .file-types, .thumnailupload .kFhUBM {
+    height: 20px !important;
+    overflow: visible !important;
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.thumnailupload .jWkLDY {
+    flex-grow: 0;
+    overflow: visible;
+    height: 20px !important;
+    display: flex;
+    flex-direction: column !important;
+   }
+   .textareafilled ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: var(--background-default);
+    padding: 0 .2em;
+    left: 8px;
+    color: #767676;
+   }
+   .button-level3 {
+    background-color: var(--background-default);
+    border-style: none;
+    color: #5e5e5e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    cursor: pointer;
+    fill: #5e5e5e;
+    flex-wrap: wrap;
+    border: solid 1.5px;
+    border-color: #535353;
+    border-radius: 50px;
+    padding: 6px 15px;
+    margin: 0 10px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, fill 0.3s;
+   }
+   .button-level3:hover {
+    background-color: rgba(124, 124, 124, 0.079);
+    border-color: rgb(143, 143, 143);
+    color: rgb(143, 143, 143);
+    fill:  rgb(143, 143, 143);
+   }
+   
+
+   .creator-option {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   }
+   .creator-submitbutton {
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+    display: flex;
+   }
+   .creatorpack-submitcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   /* CSS for the custom file input */
+.custom-file-input {
+    display: none;
+  }
+  .creatorpack-section-rows {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+  }
+  .creatorpack-section-row {
+    padding: 10px;
+  }
+  .creatorpack-title {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .creatorpack-subtitle {
+    color: #505050;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: color 0.3s;
+  }
+  .creatorpack-subtitle:hover {
+    color: #929292;
+    transition: color 0.3s;
+
+  }
+  
+  .custom-file-input-galery {
+    display: flex;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100%;
+  }
+  /* Define the scrollbar styles for Webkit (Chrome, Safari) */
+.custom-file-input-galery::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+  }
+  
+  .custom-file-input-galery::-webkit-scrollbar-thumb {
+    background: #b6b1c123; /* Define the color of the thumb */
+    border-radius: 6px; /* Make the thumb round */
+  }
+  
+  .custom-file-input-galery::-webkit-scrollbar-track {
+    background: #f1f1f100; /* Define the color of the track */
+  }
+  
+  /* Define the scrollbar styles for Firefox */
+  .custom-file-input-galery {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: #333 #f1f1f100; /* Define thumb and track colors */
+  }
+  
+  /* Define the scrollbar styles for IE and Edge */
+  .custom-file-input-galery {
+    -ms-overflow-style: none; /* Hide the scrollbar in IE and Edge */
+  }
+  
+  .custom-file-input-galery::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change thumb color on hover */
+  }
+  .creator-info-start {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .creator-info-start-card {
+    /* height: 93px; */
+    display: flex;
+    flex-direction: row;
+    fill: white;
+    position: relative;
+    border-radius: 13px;
+    border: 1px solid #2B2D39;
+    background: #21212B; 
+    padding: 15px 18px;
+    width: 498px;   
+    padding-left: 70px;
+  }
+  .creator-info-start-card svg {
+    height: 20px;
+    width: 20px;
+    top: 18px;
+    opacity: 70%;
+    left: 40px;
+    position: absolute;
+  }
+  .creator-info-start-card-content {
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  .creatorpack-thumbnailcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .creatorpack-thumbnailcontainer img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+  }
+  .creatorpack-thumbnailcard {
+    border-radius: 9px;
+    border: 2px dashed #5F5F5F;
+    background: var(--Background-1, #181821);
+    width: 282px;
+    cursor: pointer;
+    overflow: hidden;
+    height: 282px;
+    margin: 14px 0px;
+    object-fit: cover;
+  }
+  .selectthumbnail {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    opacity: 40%;
+    user-select: none;
+    align-items: center;
+    transition: opacity 0.3s;
+  }
+  .selectthumbnail svg {
+    fill: #5F5F5F;
+    height: 40px;
+  
+    width: 40px;
+  }
+  .creatorpack-thumbnailcard:hover .selectthumbnail {
+    opacity: 90%;
+    transition: opacity 0.3s;
+
+  }

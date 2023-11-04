@@ -1,8 +1,12 @@
 .tags-header-container {
-    width: 100vw;
     height: 35px;
     display: flex;
+    margin: 0px 40px;
+    width: calc(100vw - 80px);
+    overflow: hidden;
+    padding: 0 10px;
     flex-direction: row;
+   
 }
 .tag {
     background-color: #dedede10;

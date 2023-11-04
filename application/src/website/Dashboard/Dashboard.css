@@ -1,0 +1,45 @@
+.dashboard-list {
+    width: 210px;
+    color: #afafaf;
+}
+.dashboard-list-element {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    box-shadow: 0px 0px 4px transparent, 0px 0px 0px transparent;
+
+    padding: 8px 0px;
+    transition: outline 0.3s ease-in, box-shadow 0.3s ease-in;
+    margin: 10px;
+    align-items: center;
+    outline: 0px solid transparent;
+}
+.dashboard-list-element svg {
+    height: 27px;
+    margin: 0 8px;
+    width: 27px;
+    fill: #949494;
+}
+.dashboard-list-element-selected {
+    transition: outline 0.3s ease-in, box-shadow 0.3s ease-in;
+    outline: 1px solid #DF96F9;
+    box-shadow: 20px 20px 34px #121218, -20px -20px 34px #1c1c26;
+}
+.dashboard {
+    display: flex;
+    justify-content: center;
+}
+.dashboard-content {
+    width: 100%;
+    max-width: 1780px;
+    margin: 50px;
+    color: white;
+}
+.dashboard-preview-container {
+    justify-content: start;
+    display: flex;
+    width: 100%;
+}

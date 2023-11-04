@@ -1,33 +1,40 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
-const userSchema = mongoose.Schema({
-    uid: {
+const productSchema = mongoose.Schema({
+    pid: {
         type: String,
         required: true
     },
-    email: {
+    title: {
         type: String,
         required: true
     },
-    username: {
+    description: {
         type: String,
+        required: true
+    },
+    owner: {
+        type: String,
+        required: true
+    },
+    createdAt: {
+        type: Date,
         required: false
     },
-    password: {
+    type: {
         type: String,
         required: true
     },
-    notif: {
-        // type: mongoose.Schema.Types.ObjectId, ref: 'Friends',
+    version: {
         type: Array,
         required: true
     },
-    assets: {
+    components: {
         type: Array,
         required: true
     },
-    owned: {
+    files: {
         type: Array,
         required: true
     }
@@ -37,4 +44,4 @@ const userSchema = mongoose.Schema({
     versionKey: false
 })
 
-module.exports = mongoose.model('User', userSchema)
+module.exports = mongoose.model('Product', productSchema)
