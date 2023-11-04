@@ -1,5 +1,5 @@
 const getProxy = () => {
-    const isProduction = 0 // changed from bool to int
+    const isProduction = 1 // changed from bool to int
     // const target = 'https://starfish-app-f3lxg.ondigitalocean.app'
     const target = 'https://www.moblibrary.net'
     const serviceTarget = 'https://www.moblibrary.net'
