@@ -79,6 +79,7 @@ const getUser = async (req, res) => {
 }
 
 const echoGPT = async (req, res) => {
+  console.log(process.env.openai)
     const { messages } = req.body; // Extract the messages from the request body
     // Ensure that the messages array only contains valid message objects
     const validMessages = messages.filter(message => message.role && message.content);
