@@ -8,7 +8,7 @@ const Cryptr = require('cryptr');
 const cryptr = new Cryptr('SECRET633919804aA');
 
 const openai = new OpenAI({
-    apiKey: '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', // defaults to process.env["OPENAI_API_KEY"]
+    apiKey: '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', // defaults to process.env["OPENAI_API_KEY"]
   });
 
 const regUser = async (req, res) => {
