@@ -101,14 +101,19 @@ const spaces = new Spaces({
   }
 
   const fetchProduct = async (req, res) => {
-    const pid = req.params['pid']
-    console.log(pid)
-    if (!pid) {
-      return res.status(500).send({error: 'Missing product ID'})
+    try {
+      const pid = req.params['pid']
+      console.log(pid)
+      if (!pid) {
+        return res.status(500).send({error: 'Missing product ID'})
+      }
+  
+      const product = await Product.findOne({pid: pid})
+      console.log(product)
+    } catch (error) {
+      console.log(error)
+      res.status(500).send({ERROR: error})
     }
-
-    const product = await Product.findOne({pid: pid})
-    console.log(product)
     res.status(202).send(product)
   }
   
